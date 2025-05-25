@@ -1,18 +1,18 @@
-# Clipboard Translator 📝🌍
+🚀 Usage
+- Copy some text in a different language
 
-A simple Python script that watches your clipboard and auto-translates any copied text into English using Google Translate.
+- Script detects it and translates automatically
 
-## 🔧 Features
+- Translated result prints to console and pops up as a notification
 
-- Clipboard monitoring via `pyperclip`
-- Automatic language detection
-- Translates to English using `deep-translator`
-- Pops up desktop notifications with translation via `plyer`
-- Runs quietly in the background
+🧩 Made for use in Rust — right-click on any message and click “Copy,” and it will auto-translate it
+Can also be used in any chats that allow copying messages
 
-## 💻 Requirements
+🪪 License
+MIT License © 2025 LeviDev69
 
-Install dependencies with pip:
+You are free to use, copy, modify, merge, publish, and distribute this code.
+Just leave credit and don’t blame me if it breaks stuff. 
 
-```bash
-pip install pyperclip deep-translator plyer
+✍️ Author
+Made by @LeviDev69
