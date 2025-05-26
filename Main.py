@@ -2,6 +2,13 @@ import pyperclip
 from deep_translator import GoogleTranslator
 from time import sleep
 from plyer import notification
+from datetime import datetime
+
+def log(original, translated):
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with open("log.txt", "a", encoding="utf-8") as log:
+        log.write(f"[{timestamp}] {original} → {translated}\n")
+
 try:
     last_clip = ""
     print("Translator active")
@@ -19,6 +26,7 @@ try:
                 app_name="Clipboard Translator",
                 timeout=5
             )
+            log(clip, translated)
         else:
             pass
         sleep(1)
