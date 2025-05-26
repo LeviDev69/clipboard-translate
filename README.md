@@ -5,6 +5,8 @@
 
 - Translated result prints to console and pops up as a notification
 
+- Use ^c to exit (ctrl + C)
+
 🧩 Made for use in Rust — right-click on any message and click “Copy,” and it will auto-translate it
 Can also be used in any chats that allow copying messages
 
