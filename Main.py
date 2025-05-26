@@ -4,6 +4,31 @@ from deep_translator import GoogleTranslator
 from time import sleep
 from plyer import notification
 from datetime import datetime
+import tkinter as tk
+from tkinter import filedialog, scrolledtext
+from sys import exit
+
+button_clicks = 0
+
+def on_close():
+    root.destroy()
+    exit()
+    
+
+root = tk.Tk()
+root.title("Translator")
+root.geometry("600x350")
+label = tk.Label(root, text="button clicked 0 times")
+label.pack()
+
+def clicked():
+    button_clicks += 1
+    label.config(text=f"Button Clicked {button_clicks} time(s)")
+
+btn = tk.Button(root, text="click me", command=clicked)
+btn.pack()
+
+root.mainloop()
 
 #make a log function
 def log(original, translated):
