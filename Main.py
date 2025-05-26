@@ -14,7 +14,7 @@ try:
             translated = GoogleTranslator(source='auto', target='en').translate(stripped_clip)
             print(f"Translated:\n{translated}")
             notification.notify(
-                title=f"Translation from:",
+                title=f"Translation:",
                 message=translated,
                 app_name="Clipboard Translator",
                 timeout=5
